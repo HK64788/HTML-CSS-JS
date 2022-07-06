@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game 2.0</title>
+	<style type="text/css">
+			
+		*,*:before,*:after{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			font-family: sans-serif;
+		}
+
+
+		.wrapper{
+			display: flex;
+		}
+
+		#area{
+			width: 580px;
+			border: 1px solid red;
+			display: flex;
+			height: 600px;
+			flex-wrap: wrap;
+
+		}
+
+		.box{
+			border: 1px solid #000;
+			width: 70px;
+			height: 70px;
+			background: url('https://e7.pngegg.com/pngimages/676/2/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.city{
+			background: url('https://img.favpng.com/3/20/1/simcity-social-simcity-buildit-city-building-game-video-game-png-favpng-Q88FxhQ1jhxbjpQD8dCT0b8RL_t.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.main-city{
+			
+			background: url('https://w7.pngwing.com/pngs/788/849/png-transparent-pixel-art-voxel-eboy-fantasy-city-game-isometric-graphics-in-video-games-and-pixel-art-voxel.png') rgba(0, 0, 255, 0.1);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#panel{
+			width: 300px;
+			height: 600px;
+			border: 1px solid #000;
+		}
+
+		.mainEnemy.moveHelper{
+			background: #9BD33A!important;
+		}
+
+		.moveHelper{
+			background: #52be5d!important;
+		}
+
+		.selected{
+			background: #3D13BE;
+		}
+
+		.mainEnemy{
+			background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOTafl4FRtXkt0pQCAUJlqn_BSOj4Zjs4gfQ&usqp=CAU')!important;
+			background-repeat: no-repeat!important;
+			background-size: cover!important;
+			background-position: center!important;
+			width: 70px;
+			height: 70px;
+		}
+
+		.enemy{
+			background: url('https://e7.pngegg.com/pngimages/125/960/png-clipart-forge-of-empires-high-middle-ages-late-middle-ages-early-middle-ages-harry-potter-castle-game-building-thumbnail.png') rgba(255,0, 0,  0.1);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div id="area">
+			
+		</div>
+		<div id="panel">
+			<p id="gold"></p>
+			<p id="army"></p>
+			<button id="skip">Skip Move</button>
+		</div>
+	</div>
+
+
+
+
+	
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

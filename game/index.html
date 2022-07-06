@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="google" content="notranslate">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+overflow: hidden;
+height: 100vh;
+font-family: sans-serif;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+
+#area{
+border: 6px solid #CCC;
+display: flex;
+width: 512px;
+flex-wrap: wrap;
+}
+
+.white{
+background: #f1f1f1;
+width: 64px;
+height: 64px;
+}
+.black{
+background: #111;
+width: 64px;
+height: 64px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 64px;
+color: #fff;
+}
+
+.player1{
+width: 32px;
+height: 32px;
+border:1px solid #ccc;
+border-radius: 50%;
+background: #333;
+}
+
+.player2{
+width: 32px;
+height: 32px;
+border:1px solid #ccc;
+border-radius: 50%;
+background: #f1f1f1;
+}
+
+
+.active {
+background: #6E9A61;
+}
+
+.yellow {
+background: #9A9236;
+}
+
+.player3{
+border: 3px solid #ff6;
+width: 32px;
+height: 32px;
+border-radius: 50%;
+background: #f1f1f1;
+}
+
+
+.player4{
+border: 3px solid #ff6;
+width: 32px;
+height: 32px;
+border-radius: 50%;
+background: #333;
+}
+
+
+.info{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	padding: 35px;
+	border: 2px solid #000;
+	width: 200px;
+	font-size: 24px;
+	transform: translateX(-50%);
+	margin-bottom: 25px;
+}
+
+.info div{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="area">
+
+</div>
+
+
+<div class="info">
+	<div>
+		<p id="player1Name"></p><p id="player1INFO"></p>
+	</div>
+	<div>
+		<p id="player2Name"></p><p id="player2INFO"></p>
+	</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
